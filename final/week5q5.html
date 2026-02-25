@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Frames</title>
+</head>
+
+<frameset cols="30%,70%" border="4">
+
+    <!-- Left Frame -->
+    <frame src="data:text/html,
+        <html>
+        <body style='margin:0;
+                     background-color:lightblue;
+                     display:flex;
+                     justify-content:center;
+                     align-items:center;
+                     height:100%;'>
+        <h2>My Frames</h2>
+        </body>
+        </html>">
+
+    <!-- Right Side -->
+    <frameset rows="50%,50%" border="4">
+
+        <!-- Top Right -->
+        <frame src="data:text/html,
+            <html>
+            <body style='margin:0;
+                         background-color:lightgreen;'>
+            </body>
+            </html>">
+
+        <!-- Bottom Right Split -->
+        <frameset cols="50%,50%" border="4">
+
+            <!-- Bottom Left -->
+            <frame src="data:text/html,
+                <html>
+                <body style='margin:0;
+                             background-color:lightcoral;'>
+                </body>
+                </html>">
+
+            <!-- Bottom Right -->
+            <frame src="data:text/html,
+                <html>
+                <body style='margin:0;
+                             background-color:lightyellow;'>
+                </body>
+                </html>">
+
+        </frameset>
+
+    </frameset>
+
+</frameset>
+
+</html>

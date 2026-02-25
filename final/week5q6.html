@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Name Page</title>
+
+    <script>
+        function openPage() {
+            var name = document.getElementById("name").value;
+
+            // Open new window
+            var newWindow = window.open("", "", "width=400,height=200");
+
+            // Write content in new window
+            newWindow.document.write("<html><head><title>Welcome</title></head>");
+            newWindow.document.write("<body style='text-align:center;'>");
+            newWindow.document.write("<h2>Welcome " + name + "</h2>");
+            newWindow.document.write("</body></html>");
+        }
+
+        function resetName() {
+            document.getElementById("name").value = "Victoria";
+        }
+    </script>
+
+</head>
+<body>
+
+<div align = "center">
+        <h2>Enter Your Name</h2>
+
+    Name:
+    <input type="text" id="name" value="Victoria">
+
+    <br><br>
+
+    <button onclick="openPage()">Enter</button>
+    <button onclick="resetName()">Reset</button>
+</div>
+
+</body>
+</html>
